@@ -3,7 +3,6 @@ require 'sinatra/reloader' if development?
 require 'slim'
 require 'sass'
 require './song'
-require 'data_mapper'
 
 configure do 
 	enable :sessions
