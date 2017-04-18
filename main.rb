@@ -2,7 +2,6 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 require 'slim'
 require 'sass'
-require './song'
 
 configure do 
 	enable :sessions
@@ -17,6 +16,8 @@ end
 configure :production do
 	DataMapper.setup(:default, ENV['DATABASE_URL'])
 end
+
+require './song'
 
 get '/styles.css' do
 	scss :styles
