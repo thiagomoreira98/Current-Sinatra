@@ -3,8 +3,9 @@ require 'sinatra/reloader' if development?
 require 'slim'
 require 'sass'
 require './song'
+require 'data_mapper'
 
-configure do
+configure do 
 	enable :sessions
 	set :username, 'frank'
 	set :password, 'sinatra'
