@@ -1,2 +1,2 @@
 require './main'
-run Sinatra::Aplication
+run Sinatra::Application
